@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+}
+
+#wrapper {
+    width: 902px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 203px;
+    background-image: url(./images/bgheader.jpg);
+}
+
+#header h2 {
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+#navHorizontal {
+    height: 30px;
+    background-color: aquamarine;
+}
+
+#navHorizontal ul {
+    list-style-type: none;
+}
+
+#navHorizontal ul li {
+    float: left;
+}
+
+#navHorizontal ul li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#navHorizontal ul li:hover a {
+    background-color: bisque;
+}
+
+#content {
+    width: 700px;
+    float: right;
+    margin-left: 2px;
+}
+
+#content #left {
+    width: 430px;
+    margin-right: 8px;
+    float: left;
+}
+
+#content #right {
+    width: 262px;
+    float: left;
+}
+
+#navVertical {
+    width: 180px;
+    float: left;
+}
+
+#navVertical ul {
+    list-style: none;
+}
+
+#navVertical ul li {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dotted #000;
+}
+
+#navVertical ul li:before {
+    content: url(images/bullet.gif);
+}
+
+#navVertical ul li a {
+    text-decoration: none;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: antiquewhite;
+}

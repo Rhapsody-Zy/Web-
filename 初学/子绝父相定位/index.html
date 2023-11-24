@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相</title>
+    <style>
+        #box {
+            width: 310px;
+            height: 190px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 100px auto 0;
+            position: relative;
+        }
+        
+        #lt {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        #br {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <img src="./images/top_tu.gif" alt="左上角图像" id="lt">
+        <img src="./images/adv.jpg" alt="主图像">
+        <img src="./images/br.gif" alt="右下角图像0" id="br">
+    </div>
+</body>
+
+</html>
