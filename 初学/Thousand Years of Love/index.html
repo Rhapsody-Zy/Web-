@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千年之恋</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <img src="./images/logo.jpg" alt="header">
+    </div>
+    <!-- nav -->
+    <div id="nav-bg">
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">会员</a></li>
+            <li><a href="#">活动</a></li>
+            <li><a href="#">直播</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </div>
+    <!-- banner -->
+    <div id="banner">
+        <img src="./images/banner.jpg" alt="banner">
+    </div>
+    <!-- content -->
+    <div id="content">
+        <h2 class="step">注册步骤：</h2>
+        <form action="#" method="post">
+            <h3>您的账号信息：</h3>
+            <table class="content">
+                <tr>
+                    <td class="left">注册方式：</td>
+                    <td>
+                        <input type="radio" name="regist" id="one"> E-mail注册
+                        <input type="radio" name="regist" id="two"> 手机号码注册
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">注册邮箱：</td>
+                    <td>
+                        <input type="email" class="right">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">注册手机：</td>
+                    <td>
+                        <input type="tel" class="right">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">登录密码：</td>
+                    <td>
+                        <input type="password" maxlength="20" class="right" maxlength="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">昵称：</td>
+                    <td>
+                        <input type="text" class="right">
+                    </td>
+                </tr>
+            </table>
+            <h3>您的个人信息：</h3>
+            <table class="content">
+                <tr>
+                    <td class="left">性别：</td>
+                    <td>
+                        <input type="radio" name="sex" id="boy"> 男
+                        <input type="radio" name="sex" id="girl"> 女
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">年龄：</td>
+                    <td>
+                        <input type="number" name="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">出生日期：</td>
+                    <td>
+                        <input type="date" name="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">幸运颜色：</td>
+                    <td>
+                        <input type="color" name="color">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">学历：</td>
+                    <td>
+                        <select name="eduLevel" id="eduLevel">
+                           <option value="0">-请选择-</option>
+                           <option value="1">专科</option>
+                           <option value="2">本科</option>
+                           <option value="3">硕士</option>
+                           <option value="4">博士</option>
+                       </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">所在城市：</td>
+                    <td>
+                        <select name="city" id="city">
+                           <option value="0">-请选择-</option>
+                           <option value="1">泉州</option>
+                           <option value="2">上海</option>
+                           <option value="3">厦门</option>
+                           <option value="4">徐州</option>
+                       </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">兴趣爱好：</td>
+                    <td>
+                        <input type="checkbox" name="Interest" value="足球"> 足球 &nbsp;
+                        <input type="checkbox" name="Interest" value="篮球"> 篮球 &nbsp;
+                        <input type="checkbox" name="Interest" value="游泳"> 游泳 &nbsp;
+                        <input type="checkbox" name="Interest" value="唱歌"> 唱歌 &nbsp;
+                        <input type="checkbox" name="Interest" value="跑步"> 跑步 &nbsp;
+                        <input type="checkbox" name="Interest" value="瑜伽"> 瑜伽 &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">自我介绍：</td>
+                    <td>
+                        <textarea name="introduce" id="introduce" cols="43" rows="8" maxlength="300" placeholder="爱写啥写啥"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="image" src="images/btn.jpg" class="btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <p>隐私保护　美好姻缘公司　版权所有　京ICP证000007 客户服务热线：4000520066　违法和不良信息举报电话：4000520066　举报邮箱：jubao@vip.sina.com
+        </p>
+    </div>
+</body>
+
+</html>
