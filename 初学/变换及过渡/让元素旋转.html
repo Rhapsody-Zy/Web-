@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用KeyFrame让元素旋转</title>
+    <style>
+        .d1 {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            animation: myFirstAni 5s;
+            transform: rotate(0deg);
+            margin: 20px;
+        }
+        
+        @keyframes myFirstAni {
+            0% {
+                margin-left: 0;
+                background: blue;
+                transform: rotate(0deg);
+            }
+            50% {
+                margin-left: 500px;
+                background: red;
+                transform: rotate(720deg);
+            }
+            100% {
+                margin-left: 0;
+                background: blue;
+                transform: rotate(0deg);
+            }
+        }
+        
+        .d2 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation: mySecondAni 5s;
+            transform: rotate(0deg);
+            margin: 20px;
+        }
+        
+        @keyframes mySecondAni {
+            0% {
+                margin-left: 0;
+                background: red;
+                transform: rotateY(0deg);
+            }
+            50% {
+                margin-left: 500px;
+                background: blue;
+                transform: rotateY(720deg);
+            }
+            100% {
+                margin-left: 0;
+                background: red;
+                transform: rotateY(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+</body>
+
+</html>

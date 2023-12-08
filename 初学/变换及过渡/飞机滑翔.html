@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>飞机滑翔</title>
+    <style type="text/css">
+        img {
+            animation: plane 5s ease infinite;
+            position: absolute;
+        }
+        
+        @keyframes plane {
+            0% {
+                top: 0px;
+                left: 0px;
+                transform: rotateY(90deg);
+            }
+            30% {
+                top: 35%;
+                left: 78%;
+            }
+            40% {
+                top: 35%;
+                left: 78%;
+                transform: rotateY(0deg);
+            }
+            75% {
+                top: 80%;
+                left: 15%;
+                transform: rotateY(0deg);
+            }
+            100% {
+                top: 0%;
+                left: 5px;
+                transform: rotateZ(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body background="images/fengjing.jpg">
+    <div>
+        <img src="images/plane.png" width="20%">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* 清除页面默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 设置夏日主题页面 */
+#summer{
+    width: 750px;
+    margin: 5px auto;
+}
+/* 设置头部以及头部图片大小 */
+.header,.bg{
+    width: 750px;
+    height: 146px;
+}
+/* 设置页面主体部分 */
+#main{
+    width: 750px;
+    background-color: #c5d599;
+    margin-top: 5px;
+}
+/* 使用伪元素清除浮动 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 设置特色模块1和特色模块2左浮动 */
+#feature-1,#feature-2{
+    float: left;
+}
+/* 使用空标签，清除特色模块1和特色模块2左浮动带来的影响 */
+.clear{
+    clear: both;
+}
+/* 设置特色模块3和特色模块4左浮动 */
+#feature-3,#feature-4{
+    float: left;
+}
+/* 统一设置4个特色模块 */
+#feature-1,#feature-2,#feature-3,#feature-4{
+    width: 375px;
+    height: 170px;
+    position: relative;  /* 设置相对定位 */
+}
+/* 统一设置4个特色模块中的左部图标 */
+.ficon-1 img,.ficon-2 img,.ficon-3 img,.ficon-4 img{
+    width: 50px;
+    height: 50px;
+    position: absolute;   /* 设置绝对定位 */
+    left: 15px;    /* 设置偏移位置 */
+    top: 15px;
+}
+/* 统一设置4个特色模块中的特色详情部分 */
+.details-1,.details-2,.details-3,.details-4{
+    width: 250px;
+    /* 设置左外边距和上外边距 */
+    margin-left: 90px;
+    margin-top: 12px;
+}
+/* 统一设置4个特色详情部分中的文字标题 */
+.t1,.t2,.t3,.t4{
+    width: 45px;
+}
+/* 统一设置4个特色详情部分中的文段落文字 */
+p{
+    font-size: 15px;
+    padding-top: 8px;   /* 设置上内边距 */
+}
+/* 鼠标放至<header>头部标签内容上时，设置背景图片 */
+.header:hover .bg{
+    transform: scale(0.95);  /* 背景图片缩小0.95倍 */
+}
+/* 鼠标放至“ficon-1”<div>块标签内容上时，设置内部图片 */
+.ficon-1:hover .img1{
+    transform-origin:left top; /* 以左上角为原心进行转换 */
+    transform: scale(1.1) rotate(30deg); /* 图片先放大1.1倍，再顺时针旋转30度 */
+}
+/* 鼠标放至“ficon-2”<div>块标签内容上时，设置内部图片 */
+.ficon-2:hover .img2{
+    transform-origin:right bottom; /* 以右下角为原心进行转换 */
+    transform: scale(1.1) rotate(-30deg); /* 图片先放大1.1倍，再逆时针旋转30度 */
+}
+/* 鼠标放至“ficon-3”<div>块标签内容上时，设置内部图片 */
+.ficon-3:hover .img3{
+    transform-origin:20% 30%; /* 以距离左侧20%和顶部30%角为原心进行转换 */
+    transform: scale(1.1) rotate(30deg); /* 图片先放大1.1倍，再顺时针旋转30度 */
+}
+/* 鼠标放至“ficon-4”<div>块标签内容上时，设置内部图片 */
+.ficon-4:hover .img4{
+    transform: scale(1.1) rotate(-30deg); /* 图片先放大1.1倍，再逆时针旋转30度 */
+}
+/* 鼠标放至“details-1”<div>块标签内容上时，设置内部文字标题 */
+#feature-1:hover .t1{
+    transform: translate(102px); /* 文字标题向右位移102px */
+}
+/* 鼠标放至“details-2”<div>块标签内容上时，设置内部文字标题 */
+#feature-2:hover .t2{
+    transform: translate(102px); /* 文字标题向右位移102px */
+}
+/* 鼠标放至“details-3”<div>块标签内容上时，设置内部文字标题 */
+#feature-3:hover .t3{
+    transform: translate(102px); /* 文字标题向右位移102px */
+}
+/* 鼠标放至“details-4”<div>块标签内容上时，设置内部文字标题 */
+#feature-4:hover .t4{
+    transform: translate(102px); /* 文字标题向右位移102px */
+}

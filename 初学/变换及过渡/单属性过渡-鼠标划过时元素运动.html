@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标划过时元素运动500px</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            transition: width 2s;
+        }
+        
+        .d1 {
+            background-color: pink;
+        }
+        
+        .d2 {
+            background-color: lightblue;
+        }
+        
+        .d3 {
+            background-color: lightgreen;
+        }
+        
+        div:hover {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+</body>
+
+</html>

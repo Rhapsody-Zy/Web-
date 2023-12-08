@@ -1,0 +1,128 @@
+/* 清除页面默认边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 设置页面标题 */
+
+h3 {
+    text-align: center;
+    /* 文本居中 */
+    padding: 10px 0;
+    /* 设置上下内边距 */
+}
+
+
+/* 设置外层容器 */
+
+#cartoon {
+    width: 650px;
+    height: 300px;
+    margin: 10px auto;
+    overflow: hidden;
+    /* 隐藏溢出的内容部分 */
+}
+
+
+/* 设置内层容器 */
+
+.picture {
+    width: 3900px;
+    height: 300px;
+    list-style: none;
+    /* 取消项目标记 */
+}
+
+
+/* 设置项目列表与图片的宽度和高度相同 */
+
+.picture>li,
+img {
+    width: 650px;
+    height: 300px;
+}
+
+
+/* 设置项目列表 */
+
+.picture>li {
+    float: left;
+    /* 向左浮动 */
+    position: relative;
+    /* 设置相对定位 */
+    animation: summer 22s ease 2s infinite alternate;
+    /* 设置动画效果 */
+    -webkit-animation: summer 22s ease 2s infinite alternate;
+    /* 添加浏览器前缀，兼容浏览器 */
+}
+
+
+/* 设置图片中右下角的序号 */
+
+span {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 16px;
+    color: #FF3300;
+    display: inline-block;
+    /* 转化为内联块元素 */
+    border: 1px solid #FF3300;
+    /* 设置边框样式 */
+    border-radius: 50%;
+    /* 设置圆角 */
+    position: absolute;
+    /* 设置绝对定位 */
+    right: 70px;
+    /* 设置偏移位置 */
+    bottom: 20px;
+}
+
+
+/* 使用@keyframes规则创建动画 */
+
+@keyframes summer {
+    0% {
+        left: 0
+    }
+    20% {
+        left: -650px
+    }
+    45% {
+        left: -1300px
+    }
+    60% {
+        left: -1950px
+    }
+    80% {
+        left: -2600px
+    }
+    100% {
+        left: -3250px
+    }
+}
+
+@-webkit-keyframes summer {
+    0% {
+        left: 0
+    }
+    20% {
+        left: -650px
+    }
+    45% {
+        left: -1300px
+    }
+    60% {
+        left: -1950px
+    }
+    80% {
+        left: -2600px
+    }
+    100% {
+        left: -3250px
+    }
+}
