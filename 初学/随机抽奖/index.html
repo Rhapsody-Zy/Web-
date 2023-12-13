@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>元旦晚会随机抽奖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="outter">
+    <div id="inner">
+        <div id="left"><img  src="image_car/Cars_2006_01.png" alt="" id="carImage"></div>
+        <div id="right"><input  type="text" id="numShow"></div>
+        <div id="tips">按下Enter键开始,任意键结束！</div>
+    </div>
+</section>
+</body>
+<script>
+    //定义变量startFlag表示程序的执行状态,timeID表示计时器的句柄
+    var startFlag=false;
+    var timeID;
+    //用函数function showNum() 显示图片及相应的数字
+    function showNum() {
+        //在文本框中显示随机数字1-48
+        var num=document.getElementById("numShow");
+        num.value=Math.ceil(Math.random()*48);
+        //在img标签中显示相应的图片
+        var i=num.value;
+        if (i<10){
+            i="0"+String(i);
+        }else {
+            i=String(i);
+        }
+        document.getElementById("carImage").src="image_car/Cars_2006_"+i+".png";
+    }
+    //按下键盘事件的处理
+   window.onkeydown=function () {
+
+       if(startFlag==false && window.event.keyCode==13){
+           start();
+           startFlag=true;
+       }
+       if(startFlag==true && window.event.keyCode!=13){
+            stop();
+           startFlag=false;
+       }
+   }
+   //start()函数
+    function start() {
+        timeID=self.setInterval(showNum,1);
+        console.log(timeID);
+    }
+    //stop()函数
+    function stop() {
+        window.clearInterval(timeID);
+    }
+</script>
+</html>

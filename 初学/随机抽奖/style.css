@@ -1,0 +1,41 @@
+body{
+    background: url("image_car/ydwhbj.jpg") center center no-repeat;
+}
+#outter{
+    position: relative;
+    margin: 0 auto;
+    width: 620px;
+}
+#inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#left{
+    float: left;
+    width: 256px;
+    height: 256px;
+}
+#right{
+    float: left;
+    height: 156px;
+    width: 256px;
+    padding-top: 100px;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+#right #numShow{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: orangered;
+    height: 62px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+#tips{
+    font-size: 20px;
+    color: yellow;
+    text-align: center;
+}
